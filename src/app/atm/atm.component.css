@@ -1,17 +1,30 @@
 
 .main {
+  font-family: arial, sans-serif;
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
+  
+}
+
+button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
 }
 
 .display {
   flex-basis: 50vw;
   background-color: darkslategrey;
-  color: white;
+  color: blue;
 }
 
 .options {
-  flex-basis: 50vw;
+  flex-basis: auto;
 }
 
 .options-list {
@@ -19,5 +32,17 @@
 }
 
 .options-item {
+  flex-grow:2;
+  
+}
 
+button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
 }

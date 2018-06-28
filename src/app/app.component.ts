@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+import { BankService } from './bank.service';
 
 @Component({
   selector: 'app-root',
@@ -6,6 +8,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  
+  constructor(private _Bank : BankService, router: Router ){
+   
+  }
+ 
+  
   bankName = 'Bank of San Diego';
   account: any = {
     fname: 'first name',
